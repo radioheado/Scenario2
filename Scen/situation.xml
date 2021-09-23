@@ -4,9 +4,20 @@
 <SituationExample version="1.0" index="0">
       <NLPattern>
         <Fragments>
-          <String>Suspicious </String>
           <OntologyEntity>
-            <ConceptReference name="process1" />
+            <InstanceReference name="process2" />
+          </OntologyEntity>
+          <String> spawned by </String>
+          <OntologyEntity>
+            <OntologyString>powershell.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>05/26/2021 08:35:43</OntologyString>
           </OntologyEntity>
         </Fragments>
       </NLPattern>
@@ -19,9 +30,139 @@
 <IntelligenceQuestionExample version="1.1" index="0" main="false">
       <NLPattern>
         <Fragments>
-          <String>Why process1 spawned by powershell.exe on host 10.10.1.10 on 03/26/2020 08:35:43?</String>
+          <String>Why was </String>
+          <OntologyEntity>
+            <InstanceReference name="process2" />
+          </OntologyEntity>
+          <String> spawned by </String>
+          <OntologyEntity>
+            <OntologyString>powershell.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>05/26/2021 08:35:43</OntologyString>
+          </OntologyEntity>
         </Fragments>
       </NLPattern>
       <SituationExampleReference version="1.0" kbPartName="Scen" index="0" />
     </IntelligenceQuestionExample>
 </IntelligenceQuestionExamples>
+<HypothesisExamples>
+<HypothesisExample version="1.0" index="61" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="process2" />
+          </OntologyEntity>
+          <String> spawned by </String>
+          <OntologyEntity>
+            <OntologyString>powershell.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>05/26/2021 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String>, is part of PowerShell Execution procedure (CAR-2014-04-003)</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="62" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="process2" />
+          </OntologyEntity>
+          <String> spawned by </String>
+          <OntologyEntity>
+            <OntologyString>powershell.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>05/26/2021 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String>, is not part of PowerShell Execution procedure (CAR-2014-04-003)</String>
+        </Fragments>
+      </NLPattern>
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="63" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="process2" />
+          </OntologyEntity>
+          <String> spawned by </String>
+          <OntologyEntity>
+            <OntologyString>powershell.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>05/26/2021 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String>, is part of APT intrusion</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="64" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="process2" />
+          </OntologyEntity>
+          <String> spawned by </String>
+          <OntologyEntity>
+            <OntologyString>powershell.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>05/26/2021 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String>, was generated by testing tools in an EDR test procedure</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+<HypothesisExample version="1.0" index="65" negation="false">
+      <NLPattern>
+        <Fragments>
+          <OntologyEntity>
+            <InstanceReference name="process2" />
+          </OntologyEntity>
+          <String> spawned by </String>
+          <OntologyEntity>
+            <OntologyString>powershell.exe</OntologyString>
+          </OntologyEntity>
+          <String> on host </String>
+          <OntologyEntity>
+            <OntologyString>10.10.1.10</OntologyString>
+          </OntologyEntity>
+          <String> on </String>
+          <OntologyEntity>
+            <OntologyString>05/26/2021 08:35:43</OntologyString>
+          </OntologyEntity>
+          <String>, was generated by certain scripts written by power users and administrators for the purpose of system management</String>
+        </Fragments>
+      </NLPattern>
+      <IntelligenceQuestionExampleReference version="1.1" kbPartName="Scen" index="0" />
+    </HypothesisExample>
+</HypothesisExamples>

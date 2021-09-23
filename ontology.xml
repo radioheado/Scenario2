@@ -2052,6 +2052,72 @@
       <DirectSuperFeatures />
       <DomainNegativeExamples />
     </FeatureAdditionalInfo>
+<Feature name="has as IP address">
+      <DirectSuperFeatures>
+        <FeatureReference name="feature" />
+      </DirectSuperFeatures>
+      <ConstantFormalParametersList>
+        <FormalParameter name="&lt;P1>" />
+        <FormalParameter name="&lt;P2>" />
+      </ConstantFormalParametersList>
+      <MultiVariableCondition>
+        <AbstractFactsLinks />
+        <ParameterClassicPVSDomain>
+          <FormalParameterReference name="&lt;P1>" />
+          <LowerBound>
+            <ClassicConceptLowerBound>
+              <ConceptReference name="host" />
+            </ClassicConceptLowerBound>
+          </LowerBound>
+          <UpperBound>
+            <ClassicConceptBound>
+              <ConceptReference name="network node" />
+            </ClassicConceptBound>
+          </UpperBound>
+        </ParameterClassicPVSDomain>
+        <ParameterClassicPVSDomain>
+          <FormalParameterReference name="&lt;P2>" />
+          <LowerBound>
+            <AnyStringBound />
+          </LowerBound>
+          <UpperBound>
+            <AnyStringBound />
+          </UpperBound>
+        </ParameterClassicPVSDomain>
+      </MultiVariableCondition>
+      <DomainNegativeExamples />
+      <ParametersProperties>
+        <Properties>
+          <FormalParameterReference name="&lt;P1>" />
+          <disciple.km.ontology.features.SingleMultipleProperty single="false" />
+        </Properties>
+        <Properties>
+          <FormalParameterReference name="&lt;P2>" />
+          <disciple.km.ontology.features.SingleMultipleProperty single="false" />
+        </Properties>
+      </ParametersProperties>
+      <documentation value="" />
+      <NLInfo>
+        <NLPattern>
+          <Fragments>
+            <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+              <FormalParameterReference name="&lt;P1>" />
+            </Parameter>
+            <String> </String>
+            <OntologyEntity>
+              <FeatureReference name="has as IP address" />
+            </OntologyEntity>
+            <String> </String>
+            <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+              <FormalParameterReference name="&lt;P2>" />
+            </Parameter>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Feature>
 <Feature name="has as injected DLL">
       <DirectSuperFeatures>
         <FeatureReference name="feature" />

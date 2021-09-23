@@ -1,6 +1,25 @@
 <?xml version="1.0"?>
 <Ontology version="2">
 <Instances>
+<Instance name="time1">
+      <DirectSuperConcepts>
+        <ConceptReference name="time" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="time1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
 <Instance name="process2">
       <DirectSuperConcepts>
         <ConceptReference name="OS process" />
@@ -39,44 +58,6 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="domain1">
-      <DirectSuperConcepts>
-        <ConceptReference name="domain" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="domain1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="IP address mapping1">
-      <DirectSuperConcepts>
-        <ConceptReference name="IP address mapping" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="IP address mapping1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
 <Instance name="APT28">
       <DirectSuperConcepts>
         <ConceptReference name="APT group" />
@@ -96,44 +77,6 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="destination IP1">
-      <DirectSuperConcepts>
-        <ConceptReference name="IPv4 address" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="destination IP1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="source IP1">
-      <DirectSuperConcepts>
-        <ConceptReference name="IPv4 address" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="source IP1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
 <Instance name="connection1">
       <DirectSuperConcepts>
         <ConceptReference name="outbound web network traffic" />
@@ -145,6 +88,25 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="connection1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
+<Instance name="powershell utility">
+      <DirectSuperConcepts>
+        <ConceptReference name="utility software" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="powershell utility" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -173,4 +135,33 @@
       </NLInfo>
     </Instance>
 </Instances>
+<Facts>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="time1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>05/26/2021 08:35:43</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as external name" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="powershell utility" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>powershell.exe</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as IP address" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="host1" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>10.10.1.10</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+</Facts>
 </Ontology>
