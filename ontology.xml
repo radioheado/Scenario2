@@ -4,6 +4,25 @@
 <ConceptAdditionalInfo name="object">
       <DirectSuperConcepts />
     </ConceptAdditionalInfo>
+<Concept name="network node">
+      <DirectSuperConcepts>
+        <ConceptReference name="object" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="network node" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
 <Concept name="command">
       <DirectSuperConcepts>
         <ConceptReference name="object" />
@@ -97,7 +116,7 @@
         <ConceptReference name="object" />
       </DirectSuperConcepts>
     </ConceptAdditionalInfo>
-<Concept name="network object">
+<Concept name="network traffic">
       <DirectSuperConcepts>
         <ConceptReference name="object" />
       </DirectSuperConcepts>
@@ -107,7 +126,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <ConceptReference name="network object" />
+              <ConceptReference name="network traffic" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -667,9 +686,9 @@
         </NLPattern>
       </NLInfo>
     </Concept>
-<Concept name="connection">
+<Concept name="internet network traffic">
       <DirectSuperConcepts>
-        <ConceptReference name="network object" />
+        <ConceptReference name="network traffic" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -677,7 +696,45 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <ConceptReference name="connection" />
+              <ConceptReference name="internet network traffic" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="file transfer network traffic">
+      <DirectSuperConcepts>
+        <ConceptReference name="network traffic" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="file transfer network traffic" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="web network traffic">
+      <DirectSuperConcepts>
+        <ConceptReference name="network traffic" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="web network traffic" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -840,6 +897,25 @@
         </NLPattern>
       </NLInfo>
     </Concept>
+<Concept name="host">
+      <DirectSuperConcepts>
+        <ConceptReference name="network node" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="host" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
 <Concept name="utility software">
       <DirectSuperConcepts>
         <ConceptReference name="software" />
@@ -986,9 +1062,9 @@
         <ConceptReference name="harmonious evidence" />
       </DirectSuperConcepts>
     </ConceptAdditionalInfo>
-<Concept name="outbound connection">
+<Concept name="intranet web network traffic">
       <DirectSuperConcepts>
-        <ConceptReference name="connection" />
+        <ConceptReference name="web network traffic" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -996,7 +1072,45 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <ConceptReference name="outbound connection" />
+              <ConceptReference name="intranet web network traffic" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="outbound web network traffic">
+      <DirectSuperConcepts>
+        <ConceptReference name="web network traffic" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="outbound web network traffic" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="internet file transfer traffic">
+      <DirectSuperConcepts>
+        <ConceptReference name="internet network traffic" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="internet file transfer traffic" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -1339,6 +1453,44 @@
           <Fragments>
             <OntologyEntity>
               <ConceptReference name="command line tool" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="outbound internet encrypted web traffic">
+      <DirectSuperConcepts>
+        <ConceptReference name="outbound web network traffic" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="outbound internet encrypted web traffic" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="intranet file transfer  traffic">
+      <DirectSuperConcepts>
+        <ConceptReference name="intranet web network traffic" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="intranet file transfer  traffic" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -2773,7 +2925,7 @@
           </LowerBound>
           <UpperBound>
             <ClassicConceptBound>
-              <ConceptReference name="connection" />
+              <ConceptReference name="web network traffic" />
             </ClassicConceptBound>
           </UpperBound>
         </ParameterClassicPVSDomain>
@@ -3156,7 +3308,7 @@
           </LowerBound>
           <UpperBound>
             <ClassicConceptBound>
-              <ConceptReference name="connection" />
+              <ConceptReference name="web network traffic" />
             </ClassicConceptBound>
           </UpperBound>
         </ParameterClassicPVSDomain>
@@ -3222,7 +3374,7 @@
           </LowerBound>
           <UpperBound>
             <ClassicConceptBound>
-              <ConceptReference name="connection" />
+              <ConceptReference name="web network traffic" />
             </ClassicConceptBound>
           </UpperBound>
         </ParameterClassicPVSDomain>
@@ -3288,7 +3440,7 @@
           </LowerBound>
           <UpperBound>
             <ClassicConceptBound>
-              <ConceptReference name="connection" />
+              <ConceptReference name="web network traffic" />
             </ClassicConceptBound>
           </UpperBound>
         </ParameterClassicPVSDomain>
@@ -3354,7 +3506,7 @@
           </LowerBound>
           <UpperBound>
             <ClassicConceptBound>
-              <ConceptReference name="connection" />
+              <ConceptReference name="web network traffic" />
             </ClassicConceptBound>
           </UpperBound>
         </ParameterClassicPVSDomain>
@@ -4036,339 +4188,4 @@
       <DomainNegativeExamples />
     </FeatureAdditionalInfo>
 </Features>
-<Facts>
-<Fact>
-      <FeatureReference name="has as external name matching" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga temporary file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>~_MC_[2-7]~[0-9]*</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as specific string" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga command shell file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>microsoft corp.</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as specific string" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga command shell file2" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>superhard corp.</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga command shell file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>cmd.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga command shell file2" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>ati.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga Windows service1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>riodrv32</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga temporary folder1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>{USERLOCALDATA}\Temp</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga data file2" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>sam.sav</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga data file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>sam.dat</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga library file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>riodrv32.sys</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga DLL1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>netui.dll</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga Registry key2" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>HKEY_LOCAL_MACHINE\SOFTWARE\riodrv32\TEMP</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga Registry key1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>HKEY_LOCAL_MACHINE\SOFTWARE\riodrv32\DEL</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="cmd" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>cmd.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="powershell" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>powershell.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as Windows service" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga Windows service1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as path name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga command shell file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>%SYSTEMROOT%\system32\cmd.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as path name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga command shell file2" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>%SYSTEMROOT%\system32\ati.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as path name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga data file2" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>%USERPROFILE%\sam.sav</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as path name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga data file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>%USERPROFILE%\AppData\Local\Temp\sam.dat</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as path name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga library file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>%SYSTEMROOT%\system32\drivers\riodrv32.sys</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as path name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga DLL1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>%SYSTEMROOT%\system\netui.dll</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as unique malware string" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga DLL1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>netui.dll</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as unique malware string" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga DLL1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>superhard corp.</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as MD5 hash" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga DLL1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>6B31344B40E2AF9C9EE3BA707558C14E</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as temporary folder" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga temporary folder1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as temporary file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga temporary file1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as data file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga data file2" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as data file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga data file1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as library file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga library file1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as library file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga DLL1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="is isomorphic with" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga command shell file1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga command shell file2" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as command shell file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga command shell file2" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as command shell file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga command shell file1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as Registry key" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga Registry key2" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as Registry key" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga Registry key1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as injected DLL" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="Auriga Windows service1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga DLL1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-</Facts>
 </Ontology>

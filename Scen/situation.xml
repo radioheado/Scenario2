@@ -87,7 +87,7 @@
       <OntologyActions>
         <OntologyActionExpressionExample>
           <GenerateIndexedInstanceWithPrefixExample>
-            <ConceptReference name="outbound connection" />connection</GenerateIndexedInstanceWithPrefixExample>
+            <ConceptReference name="outbound web network traffic" />connection</GenerateIndexedInstanceWithPrefixExample>
           <InstanceReference name="connection1" />
         </OntologyActionExpressionExample>
         <OntologyActionExpressionExample>

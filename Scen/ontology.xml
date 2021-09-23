@@ -58,6 +58,25 @@
         </NLPattern>
       </NLInfo>
     </Instance>
+<Instance name="host1">
+      <DirectSuperConcepts>
+        <ConceptReference name="host" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <InstanceReference name="host1" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Instance>
 <Instance name="domain1">
       <DirectSuperConcepts>
         <ConceptReference name="domain" />
@@ -193,7 +212,7 @@
     </Instance>
 <Instance name="connection1">
       <DirectSuperConcepts>
-        <ConceptReference name="outbound connection" />
+        <ConceptReference name="outbound web network traffic" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -230,222 +249,4 @@
       </NLInfo>
     </Instance>
 </Instances>
-<Facts>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="reg utility" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>reg.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="program1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>svchost.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="IP address mapping1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>69.195.129.72</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="time1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>01/04/2019 15:42:57 PM</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="domain1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>a-jsm.infobusinessus.org</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="destination port1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>53</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="destination IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>10.10.4.101</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source port1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>60067</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>10.10.1.11</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as external name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="DNS registrar1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>NOT_FOUND</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as IP address mapping" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="domain1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="IP address mapping1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as DNS registrar" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="domain1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="DNS registrar1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as process ID" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="program1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>2064</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as path name" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="program1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <OntologyString>C:\Windows\Temp\svchost.exe</OntologyString>
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as temporary folder" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga temporary folder1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as temporary file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga temporary file1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as data file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga data file2" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as data file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga data file1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as library file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga library file1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as library file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga DLL1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as command shell file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga command shell file2" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as command shell file" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga command shell file1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as Registry key" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga Registry key1" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-<Fact>
-      <FeatureReference name="has as Registry key" />
-      <ConstantInstantiatedFormalParameters>
-        <FormalParameterReference name="&lt;P1>" />
-        <InstanceReference name="source IP1" />
-        <FormalParameterReference name="&lt;P2>" />
-        <InstanceReference name="Auriga Registry key2" />
-      </ConstantInstantiatedFormalParameters>
-    </Fact>
-</Facts>
 </Ontology>

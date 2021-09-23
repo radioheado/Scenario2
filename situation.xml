@@ -86,12 +86,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -172,7 +172,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -276,12 +276,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -362,7 +362,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -470,12 +470,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -556,7 +556,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -578,7 +578,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.10</OntologyString>
@@ -802,12 +802,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -879,7 +879,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -1006,12 +1006,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -1087,7 +1087,7 @@
                 <OntologyString>176</OntologyString>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S3" />
                 <OntologyString>10.10.1.10</OntologyString>
@@ -3885,12 +3885,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="connection" />
+                    <ConceptReference name="web network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -4037,7 +4037,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -4778,12 +4778,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -4907,7 +4907,7 @@
                 <OntologyString>176</OntologyString>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S3" />
                 <OntologyString>10.10.1.10</OntologyString>
@@ -5264,12 +5264,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="connection" />
+                    <ConceptReference name="web network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -5372,7 +5372,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.10</OntologyString>
@@ -7241,12 +7241,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -7327,7 +7327,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.10</OntologyString>
@@ -8019,7 +8019,7 @@
       </JSONObject>
       <OntologyActionPatterns>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="outbound connection" />
+          <ConceptReference name="outbound web network traffic" />
           <FormalParameterReference name="?O1" />connection</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateIndexedInstanceWithNameActionPattern>
           <FormalParameterReference name="?S7" />
@@ -8158,12 +8158,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -8331,7 +8331,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -8481,7 +8481,7 @@
       </JSONObject>
       <OntologyActionPatterns>
         <GenerateIndexedInstanceWithPrefixActionPattern>
-          <ConceptReference name="outbound connection" />
+          <ConceptReference name="outbound web network traffic" />
           <FormalParameterReference name="?O1" />connection</GenerateIndexedInstanceWithPrefixActionPattern>
         <GenerateIndexedInstanceWithNameActionPattern>
           <FormalParameterReference name="?S7" />
@@ -8620,12 +8620,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -8793,7 +8793,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -9482,12 +9482,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -9551,7 +9551,7 @@
                 <OntologyString>05/15/2017 16:23 GMT</OntologyString>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S6" />
                 <OntologyString>23845</OntologyString>
@@ -12725,12 +12725,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -12811,7 +12811,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -12923,12 +12923,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -13009,7 +13009,7 @@
               <ConstantInstantiatedFormalParameters>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?S1" />
                 <OntologyString>10.10.1.11</OntologyString>
@@ -13301,12 +13301,12 @@
                 <FormalParameterReference name="?O1" />
                 <LowerBound>
                   <ClassicConceptLowerBound>
-                    <ConceptReference name="outbound connection" />
+                    <ConceptReference name="outbound web network traffic" />
                   </ClassicConceptLowerBound>
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="network object" />
+                    <ConceptReference name="network traffic" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -13343,7 +13343,7 @@
                 <OntologyString>05/15/2017 16:23 GMT</OntologyString>
                 <FormalParameterReference name="?O1" />
                 <MintermOfConcepts>
-                  <ConceptReference name="outbound connection" />
+                  <ConceptReference name="outbound web network traffic" />
                 </MintermOfConcepts>
                 <FormalParameterReference name="?O4" />
                 <InstanceReference name="APT1" />
