@@ -3383,6 +3383,120 @@
         </LearnableConditionExamples>
       </LearnableCondition>
     </GlobalHypothesisClass>
+<GlobalHypothesisClass localIndex="31" lastLocalIndex="0">
+      <ConstantFormalParametersList>
+        <FormalParameter name="?O1" />
+        <FormalParameter name="?S1" />
+        <FormalParameter name="?S2" />
+        <FormalParameter name="?S3" />
+      </ConstantFormalParametersList>
+      <ContextHypothesisClass localIndex="0">
+        <NLPattern>
+          <Fragments>
+            <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+              <FormalParameterReference name="?O1" />
+            </Parameter>
+            <String> spawned by </String>
+            <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+              <FormalParameterReference name="?S1" />
+            </Parameter>
+            <String> on host </String>
+            <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+              <FormalParameterReference name="?S2" />
+            </Parameter>
+            <String> on </String>
+            <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+              <FormalParameterReference name="?S3" />
+            </Parameter>
+            <String>, is part of PowerShell Execution procedure (CAR-2014-04-003)</String>
+          </Fragments>
+        </NLPattern>
+      </ContextHypothesisClass>
+      <LearnableCondition>
+        <SharedParameters>
+          <FormalParameterReference name="?O1" />
+          <FormalParameterReference name="?S1" />
+          <FormalParameterReference name="?S2" />
+          <FormalParameterReference name="?S3" />
+        </SharedParameters>
+        <Explanations>
+          <Positive />
+        </Explanations>
+        <PVSCondition>
+          <MainCondition>
+            <ConstantFormalParametersSubList>
+              <FormalParameterReference name="?O1" />
+              <FormalParameterReference name="?S1" />
+              <FormalParameterReference name="?S2" />
+              <FormalParameterReference name="?S3" />
+            </ConstantFormalParametersSubList>
+            <MultiVariableCondition>
+              <AbstractFactsLinks />
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?O1" />
+                <LowerBound>
+                  <ClassicConceptLowerBound>
+                    <ConceptReference name="OS process" />
+                  </ClassicConceptLowerBound>
+                </LowerBound>
+                <UpperBound>
+                  <ClassicConceptBound>
+                    <ConceptReference name="process" />
+                  </ClassicConceptBound>
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S1" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S2" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S3" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+            </MultiVariableCondition>
+          </MainCondition>
+          <ExceptWhenConditions />
+        </PVSCondition>
+        <LearnableConditionExamples lastRuleExampleIndex="1">
+          <ConditionGeneralizedExamplesList>
+            <ConditionGeneralizedExample index="1" type="1" noOfPositiveExamples="1" noOfNegativeExamples="0">
+              <ConstantInstantiatedFormalParameters>
+                <FormalParameterReference name="?O1" />
+                <MintermOfConcepts>
+                  <ConceptReference name="OS process" />
+                </MintermOfConcepts>
+                <FormalParameterReference name="?S1" />
+                <OntologyString>powershell.exe</OntologyString>
+                <FormalParameterReference name="?S2" />
+                <OntologyString>10.10.1.10</OntologyString>
+                <FormalParameterReference name="?S3" />
+                <OntologyString>05/26/2021 08:35:43</OntologyString>
+              </ConstantInstantiatedFormalParameters>
+            </ConditionGeneralizedExample>
+          </ConditionGeneralizedExamplesList>
+          <ListOfExamples />
+        </LearnableConditionExamples>
+      </LearnableCondition>
+    </GlobalHypothesisClass>
 </GlobalHypothesesClasses>
 <GlobalArgumentsClasses>
 <GlobalArgumentClass localIndex="0" favoring="favoring" lastLocalIndex="11">
@@ -12634,6 +12748,150 @@
         </LearnableConditionExamples>
       </LearnableCondition>
     </CollectionTaskClass>
+<CollectionTaskClass localIndex="16">
+      <ConstantFormalParametersList>
+        <FormalParameter name="?O1" />
+        <FormalParameter name="?S1" />
+        <FormalParameter name="?S2" />
+        <FormalParameter name="?S3" />
+        <FormalParameter name="?S4" />
+      </ConstantFormalParametersList>
+      <NLPattern>
+        <Fragments>
+          <String>Search the </String>
+          <OntologyEntity>
+            <ConceptReference name="process" />
+          </OntologyEntity>
+          <String> that called </String>
+          <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+            <FormalParameterReference name="?O1" />
+          </Parameter>
+          <String> with ID </String>
+          <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+            <FormalParameterReference name="?S1" />
+          </Parameter>
+          <String> spawned by </String>
+          <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+            <FormalParameterReference name="?S2" />
+          </Parameter>
+          <String> on host </String>
+          <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+            <FormalParameterReference name="?S3" />
+          </Parameter>
+          <String> on </String>
+          <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+            <FormalParameterReference name="?S4" />
+          </Parameter>
+        </Fragments>
+      </NLPattern>
+      <ConstantFormalParametersSubList>
+        <FormalParameterReference name="?O1" />
+        <FormalParameterReference name="?S1" />
+        <FormalParameterReference name="?S2" />
+        <FormalParameterReference name="?S3" />
+        <FormalParameterReference name="?S4" />
+      </ConstantFormalParametersSubList>
+      <JSONObject />
+      <JSONObject />
+      <OntologyActionPatterns />
+      <LearnableCondition>
+        <SharedParameters>
+          <FormalParameterReference name="?O1" />
+          <FormalParameterReference name="?S1" />
+          <FormalParameterReference name="?S2" />
+          <FormalParameterReference name="?S3" />
+          <FormalParameterReference name="?S4" />
+        </SharedParameters>
+        <Explanations>
+          <Positive />
+        </Explanations>
+        <PVSCondition>
+          <MainCondition>
+            <ConstantFormalParametersSubList>
+              <FormalParameterReference name="?O1" />
+              <FormalParameterReference name="?S1" />
+              <FormalParameterReference name="?S2" />
+              <FormalParameterReference name="?S3" />
+              <FormalParameterReference name="?S4" />
+            </ConstantFormalParametersSubList>
+            <MultiVariableCondition>
+              <AbstractFactsLinks />
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?O1" />
+                <LowerBound>
+                  <ClassicConceptLowerBound>
+                    <ConceptReference name="OS process" />
+                  </ClassicConceptLowerBound>
+                </LowerBound>
+                <UpperBound>
+                  <ClassicConceptBound>
+                    <ConceptReference name="process" />
+                  </ClassicConceptBound>
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S1" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S2" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S3" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S4" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+            </MultiVariableCondition>
+          </MainCondition>
+          <ExceptWhenConditions />
+        </PVSCondition>
+        <LearnableConditionExamples lastRuleExampleIndex="1">
+          <ConditionGeneralizedExamplesList>
+            <ConditionGeneralizedExample index="1" type="1" noOfPositiveExamples="1" noOfNegativeExamples="0">
+              <ConstantInstantiatedFormalParameters>
+                <FormalParameterReference name="?O1" />
+                <MintermOfConcepts>
+                  <ConceptReference name="OS process" />
+                </MintermOfConcepts>
+                <FormalParameterReference name="?S1" />
+                <OntologyString>2345</OntologyString>
+                <FormalParameterReference name="?S2" />
+                <OntologyString>powershell.exe</OntologyString>
+                <FormalParameterReference name="?S3" />
+                <OntologyString>10.10.1.10</OntologyString>
+                <FormalParameterReference name="?S4" />
+                <OntologyString>05/26/2021 08:35:43</OntologyString>
+              </ConstantInstantiatedFormalParameters>
+            </ConditionGeneralizedExample>
+          </ConditionGeneralizedExamplesList>
+          <ListOfExamples />
+        </LearnableConditionExamples>
+      </LearnableCondition>
+    </CollectionTaskClass>
 </CollectionTaskClasses>
 <AbductiveStepRules>
 <AbductiveStepRule localIndex="0">
@@ -14657,6 +14915,144 @@
                 <InstanceReference name="APT1" />
                 <FormalParameterReference name="?S2" />
                 <OntologyString>03/06/2018 08:30:30 PM</OntologyString>
+              </ConstantInstantiatedFormalParameters>
+            </ConditionGeneralizedExample>
+          </ConditionGeneralizedExamplesList>
+          <ListOfExamples />
+        </LearnableConditionExamples>
+      </LearnableCondition>
+    </CollectionStepRule>
+<CollectionStepRule localIndex="15">
+      <ConstantFormalParametersList>
+        <FormalParameter name="?O1" />
+        <FormalParameter name="?S1" />
+        <FormalParameter name="?S2" />
+        <FormalParameter name="?S3" />
+        <FormalParameter name="?S4" />
+      </ConstantFormalParametersList>
+      <CollectionTaskClassReference kbPartName="User" index="16" />
+      <ConstantParametersCorrespondence>
+        <ConstantFormalParametersSubList>
+          <FormalParameterReference name="?O1" />
+          <FormalParameterReference name="?S1" />
+          <FormalParameterReference name="?S2" />
+          <FormalParameterReference name="?S3" />
+          <FormalParameterReference name="?S4" />
+        </ConstantFormalParametersSubList>
+        <ConstantFormalParametersSubList>
+          <FormalParameterReference name="?O1" />
+          <FormalParameterReference name="?S1" />
+          <FormalParameterReference name="?S2" />
+          <FormalParameterReference name="?S3" />
+          <FormalParameterReference name="?S4" />
+        </ConstantFormalParametersSubList>
+      </ConstantParametersCorrespondence>
+      <GlobalHypothesisClassReference kbPartName="User" index="31" />
+      <ConstantParametersCorrespondence>
+        <ConstantFormalParametersSubList>
+          <FormalParameterReference name="?O1" />
+          <FormalParameterReference name="?S1" />
+          <FormalParameterReference name="?S2" />
+          <FormalParameterReference name="?S3" />
+        </ConstantFormalParametersSubList>
+        <ConstantFormalParametersSubList>
+          <FormalParameterReference name="?O1" />
+          <FormalParameterReference name="?S2" />
+          <FormalParameterReference name="?S3" />
+          <FormalParameterReference name="?S4" />
+        </ConstantFormalParametersSubList>
+      </ConstantParametersCorrespondence>
+      <LearnableCondition>
+        <SharedParameters>
+          <FormalParameterReference name="?O1" />
+          <FormalParameterReference name="?S1" />
+          <FormalParameterReference name="?S2" />
+          <FormalParameterReference name="?S3" />
+          <FormalParameterReference name="?S4" />
+        </SharedParameters>
+        <Explanations>
+          <Positive />
+        </Explanations>
+        <PVSCondition>
+          <MainCondition>
+            <ConstantFormalParametersSubList>
+              <FormalParameterReference name="?O1" />
+              <FormalParameterReference name="?S1" />
+              <FormalParameterReference name="?S2" />
+              <FormalParameterReference name="?S3" />
+              <FormalParameterReference name="?S4" />
+            </ConstantFormalParametersSubList>
+            <MultiVariableCondition>
+              <AbstractFactsLinks />
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?O1" />
+                <LowerBound>
+                  <ClassicConceptLowerBound>
+                    <ConceptReference name="OS process" />
+                  </ClassicConceptLowerBound>
+                </LowerBound>
+                <UpperBound>
+                  <ClassicConceptBound>
+                    <ConceptReference name="process" />
+                  </ClassicConceptBound>
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S1" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S2" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S3" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+              <ParameterClassicPVSDomain>
+                <FormalParameterReference name="?S4" />
+                <LowerBound>
+                  <AnyStringBound />
+                </LowerBound>
+                <UpperBound>
+                  <AnyStringBound />
+                </UpperBound>
+              </ParameterClassicPVSDomain>
+            </MultiVariableCondition>
+          </MainCondition>
+          <ExceptWhenConditions />
+        </PVSCondition>
+        <LearnableConditionExamples lastRuleExampleIndex="1">
+          <ConditionGeneralizedExamplesList>
+            <ConditionGeneralizedExample index="1" type="1" noOfPositiveExamples="1" noOfNegativeExamples="0">
+              <ConstantInstantiatedFormalParameters>
+                <FormalParameterReference name="?O1" />
+                <MintermOfConcepts>
+                  <ConceptReference name="OS process" />
+                </MintermOfConcepts>
+                <FormalParameterReference name="?S1" />
+                <OntologyString>2345</OntologyString>
+                <FormalParameterReference name="?S2" />
+                <OntologyString>powershell.exe</OntologyString>
+                <FormalParameterReference name="?S3" />
+                <OntologyString>10.10.1.10</OntologyString>
+                <FormalParameterReference name="?S4" />
+                <OntologyString>05/26/2021 08:35:43</OntologyString>
               </ConstantInstantiatedFormalParameters>
             </ConditionGeneralizedExample>
           </ConditionGeneralizedExamplesList>

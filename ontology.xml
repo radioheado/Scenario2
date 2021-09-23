@@ -4,6 +4,63 @@
 <ConceptAdditionalInfo name="object">
       <DirectSuperConcepts />
     </ConceptAdditionalInfo>
+<Concept name="internal port">
+      <DirectSuperConcepts>
+        <ConceptReference name="object" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="internal port" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="IP assignment">
+      <DirectSuperConcepts>
+        <ConceptReference name="object" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="IP assignment" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="connection">
+      <DirectSuperConcepts>
+        <ConceptReference name="object" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="connection" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
 <Concept name="process">
       <DirectSuperConcepts>
         <ConceptReference name="object" />
@@ -2052,6 +2109,67 @@
       <DirectSuperFeatures />
       <DomainNegativeExamples />
     </FeatureAdditionalInfo>
+<Feature name="uses as domain">
+      <DirectSuperFeatures>
+        <FeatureReference name="feature" />
+      </DirectSuperFeatures>
+      <ConstantFormalParametersList>
+        <FormalParameter name="?01" />
+        <FormalParameter name="?02" />
+      </ConstantFormalParametersList>
+      <MultiVariableCondition>
+        <AbstractFactsLinks />
+        <ParameterClassicPVSDomain>
+          <FormalParameterReference name="?01" />
+          <LowerBound>
+            <ClassicConceptBound>
+              <ConceptReference name="APT group" />
+            </ClassicConceptBound>
+          </LowerBound>
+          <UpperBound>
+            <ClassicConceptBound>
+              <ConceptReference name="APT group" />
+            </ClassicConceptBound>
+          </UpperBound>
+        </ParameterClassicPVSDomain>
+        <ParameterClassicPVSDomain>
+          <FormalParameterReference name="?02" />
+          <LowerBound>
+            <ClassicConceptBound>
+              <ConceptReference name="domain" />
+            </ClassicConceptBound>
+          </LowerBound>
+          <UpperBound>
+            <ClassicConceptBound>
+              <ConceptReference name="domain" />
+            </ClassicConceptBound>
+          </UpperBound>
+        </ParameterClassicPVSDomain>
+      </MultiVariableCondition>
+      <DomainNegativeExamples />
+      <ParametersProperties />
+      <documentation value="" />
+      <NLInfo>
+        <NLPattern>
+          <Fragments>
+            <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+              <FormalParameterReference name="?01" />
+            </Parameter>
+            <String> </String>
+            <OntologyEntity>
+              <FeatureReference name="uses as domain" />
+            </OntologyEntity>
+            <String> </String>
+            <Parameter hasIndefiniteArticle="false" hasDefiniteArticle="false" useThePersonalPronoun="false">
+              <FormalParameterReference name="?02" />
+            </Parameter>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Feature>
 <Feature name="has as exe">
       <DirectSuperFeatures>
         <FeatureReference name="feature" />
