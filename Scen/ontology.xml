@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Ontology version="2">
 <Instances>
-<Instance name="program1">
+<Instance name="process2">
       <DirectSuperConcepts>
-        <ConceptReference name="program" />
+        <ConceptReference name="OS process" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -11,45 +11,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <InstanceReference name="program1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="source port1">
-      <DirectSuperConcepts>
-        <ConceptReference name="port" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="source port1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="time1">
-      <DirectSuperConcepts>
-        <ConceptReference name="time" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="time1" />
+              <InstanceReference name="process2" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -126,44 +88,6 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="APT28" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="DNS registrar1">
-      <DirectSuperConcepts>
-        <ConceptReference name="DNS provider" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="DNS registrar1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="destination port1">
-      <DirectSuperConcepts>
-        <ConceptReference name="DNS port" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="destination port1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>

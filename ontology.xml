@@ -4,6 +4,82 @@
 <ConceptAdditionalInfo name="object">
       <DirectSuperConcepts />
     </ConceptAdditionalInfo>
+<Concept name="process">
+      <DirectSuperConcepts>
+        <ConceptReference name="object" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="process" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="session">
+      <DirectSuperConcepts>
+        <ConceptReference name="object" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="session" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="task schedule">
+      <DirectSuperConcepts>
+        <ConceptReference name="object" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="task schedule" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="file">
+      <DirectSuperConcepts>
+        <ConceptReference name="object" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="file" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
 <Concept name="network node">
       <DirectSuperConcepts>
         <ConceptReference name="object" />
@@ -363,7 +439,7 @@
         </NLPattern>
       </NLInfo>
     </Concept>
-<Concept name="process">
+<Concept name="process1">
       <DirectSuperConcepts>
         <ConceptReference name="system object" />
       </DirectSuperConcepts>
@@ -373,7 +449,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <ConceptReference name="process" />
+              <ConceptReference name="process1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -382,26 +458,7 @@
         </NLPattern>
       </NLInfo>
     </Concept>
-<Concept name="system tool">
-      <DirectSuperConcepts>
-        <ConceptReference name="system object" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <ConceptReference name="system tool" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Concept>
-<Concept name="file">
+<Concept name="file1">
       <DirectSuperConcepts>
         <ConceptReference name="file system object" />
       </DirectSuperConcepts>
@@ -411,7 +468,7 @@
         <NLPattern>
           <Fragments>
             <OntologyEntity>
-              <ConceptReference name="file" />
+              <ConceptReference name="file1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -916,6 +973,177 @@
         </NLPattern>
       </NLInfo>
     </Concept>
+<Concept name="document file">
+      <DirectSuperConcepts>
+        <ConceptReference name="file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="document file" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="executable file">
+      <DirectSuperConcepts>
+        <ConceptReference name="file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="executable file" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="login session">
+      <DirectSuperConcepts>
+        <ConceptReference name="session" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="login session" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="OS process">
+      <DirectSuperConcepts>
+        <ConceptReference name="process" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="OS process" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="executable binary">
+      <DirectSuperConcepts>
+        <ConceptReference name="executable file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="executable binary" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="executable script">
+      <DirectSuperConcepts>
+        <ConceptReference name="executable file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="executable script" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="email attachment">
+      <DirectSuperConcepts>
+        <ConceptReference name="document file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="email attachment" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="email">
+      <DirectSuperConcepts>
+        <ConceptReference name="document file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="email" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="Office application file">
+      <DirectSuperConcepts>
+        <ConceptReference name="document file" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="Office application file" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
 <Concept name="utility software">
       <DirectSuperConcepts>
         <ConceptReference name="software" />
@@ -1368,7 +1596,7 @@
     </Concept>
 <Concept name="command shell file">
       <DirectSuperConcepts>
-        <ConceptReference name="file" />
+        <ConceptReference name="file1" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -1387,7 +1615,7 @@
     </Concept>
 <Concept name="temporary file">
       <DirectSuperConcepts>
-        <ConceptReference name="file" />
+        <ConceptReference name="file1" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -1406,7 +1634,7 @@
     </Concept>
 <Concept name="data file">
       <DirectSuperConcepts>
-        <ConceptReference name="file" />
+        <ConceptReference name="file1" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -1425,7 +1653,7 @@
     </Concept>
 <Concept name="library file">
       <DirectSuperConcepts>
-        <ConceptReference name="file" />
+        <ConceptReference name="file1" />
       </DirectSuperConcepts>
       <documentation value="" />
       <NLInfo>
@@ -1434,25 +1662,6 @@
           <Fragments>
             <OntologyEntity>
               <ConceptReference name="library file" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Concept>
-<Concept name="command line tool">
-      <DirectSuperConcepts>
-        <ConceptReference name="system tool" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <ConceptReference name="command line tool" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
@@ -1534,12 +1743,69 @@
         <ConceptReference name="recorder" />
       </DirectSuperConcepts>
     </ConceptAdditionalInfo>
+<Concept name="init script">
+      <DirectSuperConcepts>
+        <ConceptReference name="executable script" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="init script" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
 <ConceptAdditionalInfo name="unequivocal testimonial evidence obtained at second hand">
       <DirectSuperConcepts>
         <ConceptReference name="processed evidence" />
         <ConceptReference name="unequivocal testimonial evidence" />
       </DirectSuperConcepts>
     </ConceptAdditionalInfo>
+<Concept name="user init script">
+      <DirectSuperConcepts>
+        <ConceptReference name="init script" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="user init script" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
+<Concept name="PowerShell profile script">
+      <DirectSuperConcepts>
+        <ConceptReference name="user init script" />
+      </DirectSuperConcepts>
+      <documentation value="" />
+      <NLInfo>
+        <LexicalInfo />
+        <NLPattern>
+          <Fragments>
+            <OntologyEntity>
+              <ConceptReference name="PowerShell profile script" />
+            </OntologyEntity>
+          </Fragments>
+        </NLPattern>
+        <NLPattern>
+          <Fragments />
+        </NLPattern>
+      </NLInfo>
+    </Concept>
 </Concepts>
 <Instances>
 <Instance name="Auriga Registry key1">
@@ -1667,120 +1933,6 @@
         </NLPattern>
       </NLInfo>
     </Instance>
-<Instance name="cmd">
-      <DirectSuperConcepts>
-        <ConceptReference name="command line tool" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="cmd" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="powershell">
-      <DirectSuperConcepts>
-        <ConceptReference name="command line tool" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="powershell" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Auriga library file1">
-      <DirectSuperConcepts>
-        <ConceptReference name="library file" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Auriga library file1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Auriga data file1">
-      <DirectSuperConcepts>
-        <ConceptReference name="data file" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Auriga data file1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Auriga data file2">
-      <DirectSuperConcepts>
-        <ConceptReference name="data file" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Auriga data file2" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Auriga temporary file1">
-      <DirectSuperConcepts>
-        <ConceptReference name="temporary file" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Auriga temporary file1" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
 <Instance name="Auriga command shell file1">
       <DirectSuperConcepts>
         <ConceptReference name="command shell file" />
@@ -1811,25 +1963,6 @@
           <Fragments>
             <OntologyEntity>
               <InstanceReference name="Auriga command shell file2" />
-            </OntologyEntity>
-          </Fragments>
-        </NLPattern>
-        <NLPattern>
-          <Fragments />
-        </NLPattern>
-      </NLInfo>
-    </Instance>
-<Instance name="Auriga temporary folder1">
-      <DirectSuperConcepts>
-        <ConceptReference name="temporary folder" />
-      </DirectSuperConcepts>
-      <documentation value="" />
-      <NLInfo>
-        <LexicalInfo />
-        <NLPattern>
-          <Fragments>
-            <OntologyEntity>
-              <InstanceReference name="Auriga temporary folder1" />
             </OntologyEntity>
           </Fragments>
         </NLPattern>
