@@ -3968,7 +3968,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="time" />
+                    <ConceptReference name="object" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -5603,7 +5603,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="program" />
+                    <ConceptReference name="object" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>
@@ -5968,7 +5968,7 @@
                 </LowerBound>
                 <UpperBound>
                   <ClassicConceptBound>
-                    <ConceptReference name="program" />
+                    <ConceptReference name="object" />
                   </ClassicConceptBound>
                 </UpperBound>
               </ParameterClassicPVSDomain>

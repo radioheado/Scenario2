@@ -155,12 +155,48 @@
       </ConstantInstantiatedFormalParameters>
     </Fact>
 <Fact>
+      <FeatureReference name="has as process ID" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="process2" />
+        <FormalParameterReference name="&lt;P2>" />
+        <OntologyString>2345</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as start time" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="process2" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="time1" />
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
       <FeatureReference name="has as IP address" />
       <ConstantInstantiatedFormalParameters>
         <FormalParameterReference name="&lt;P1>" />
         <InstanceReference name="host1" />
         <FormalParameterReference name="&lt;P2>" />
         <OntologyString>10.10.1.10</OntologyString>
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as host" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="process2" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="host1" />
+      </ConstantInstantiatedFormalParameters>
+    </Fact>
+<Fact>
+      <FeatureReference name="has as exe" />
+      <ConstantInstantiatedFormalParameters>
+        <FormalParameterReference name="&lt;P1>" />
+        <InstanceReference name="process2" />
+        <FormalParameterReference name="&lt;P2>" />
+        <InstanceReference name="powershell utility" />
       </ConstantInstantiatedFormalParameters>
     </Fact>
 </Facts>
